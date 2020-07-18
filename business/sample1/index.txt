@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ShoBiz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="multi_color_border"></div>
+		<div class="top_nav">
+		<div class="left">
+			<div class="logo"><p><span>Sho</span>Biz</p></div>
+			<div class="search_bar">
+				<input type="text" placeholder="Search" />
+			</div>
+		</div>
+		<div class="right">
+		<ul>
+			<li><a href="#">What's next</a></li>
+			<li><a href="#">Login</a></li>
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Post a Job</a></li>
+		</ul>
+		</div>
+	</div>
+	 <div class="bottom_nav" id="bottom_nav">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Products">Products & Platforms</a></li>
+        <li><a href="#Discover">Discover</a></li>
+      </ul>
+  </div>
+  
+  <div class="banner">
+    <img src="images/bg.png" alt="banner_img">
+  </div>
+  
+  
+  
+  <div class="row">
+  
+  <div class="column" id="Home" style="background-image: url('images/business_1.jpg');">
+    <h2>Home</h2><br>
+    <p>We help clients create the future. We combine tech expertise and business intelligence to catalyze change and deliver results.Our mission is to help customers achieve their business objectives by providing innovative, best-in-class consulting, IT solutions and services and to make it a joy for all stakeholders to work with us.</p><br>
+	<p>We function as a full stakeholder to business, offering a consulting-led approach with an integrated portfolio of technology led solutions that encompass the entire Enterprise value chain. Our Customer-centric Engagement Model defines how we do engage with you, offering specialized services and solutions that meet the distinct needs of your business.</p>
+  </div>
+  <div class="column" id="Services" style="background-image: url('images/business_2.jpg');">
+    <h2>Services</h2><br>
+    <p>We help design, enable, and execute business operations to generate customer value. We drive strategic vision, thrive amidst disruption and ensure power sustainable growth leveraging our industry expertise and contextual knowledge of your business.</p>
+  </div>
+ </div>
+ <div class="row">
+  <div class="column" id="Products" style="background-image: url('images/business_3.jpg');">
+    <h2>Products & Platforms</h2><br>
+    <p>We turn raw data into meaningful, actionable insights with the help of our CIP which combines an enterprise grade Hadoop data lake with machine learning libraries, real-time processing of streaming data, a predictive scoring engine, workflow management, data visualization, and enterprise-grade security.</p>
+	<p>Organizations in the Enterprise 4.0 world are characterized by those who provide rich business experience, connect employees, partners, and assets, with flexibility to scale, and change rapidly while being future ready with technologies such as IoT, machine learning, and blockchain.</p><br>
+
+	<p>ERP on Cloud, TCS’ Enterprise 4.0 solution, offers hosted ERP applications and services for such global businesses. We deliver business-enabling solutions that are quick to deploy across core enterprise processes such as finance and accounting, procurement, supply chain, sales, and distribution.</p>	
+  </div>
+   <div class="column" id="Discover" style="background-image: url('images/business_4.jpg');">
+    <h2>Discover</h2><br>
+    <p>We ensure the highest levels of certainty and satisfaction through a deep-set commitment to our clients, comprehensive industry expertise and a global network of innovation and delivery centers</p>
+  </div>
+  </div>
+  
+  
+</div>
+	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("bottom_nav");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+	</script>
+</body>
+</html>
