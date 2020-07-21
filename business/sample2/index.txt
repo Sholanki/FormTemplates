@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ShoBiz</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body onload="myFunctiondefault();">
+	<div class="wrapper">
+		<div class="multi_color_border"></div>
+		<div class="top_nav">
+		<div class="left">
+			<div class="logo"><p><span>Sho</span>Biz</p></div>
+			<div class="search_bar">
+				<input type="text" placeholder="Search" />
+			</div>
+		</div>
+		<div class="right">
+		<ul>
+			<li><a href="#">What's next</a></li>
+			<li><a href="#">Login</a></li>
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Post a Job</a></li>
+		</ul>
+		</div>
+	</div>
+	 <div class="bottom_nav" id="bottom_nav">
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Products">Products & Platforms</a></li>
+        <li><a href="#Discover">Discover</a></li>
+      </ul>
+  </div>
+  
+  <div class = "vid_container">
+	<video width="700" controls>
+		<source src="videos/sample_vid.mp4" type="video/mp4">
+	</video>
+  </div>
+  
+  <div class="row">
+  <div class="col-3 menu">
+    <ul>
+      <li onclick="myFunctiondefault();">About Us</li>
+      <li onclick="myFunctionServices();">Services</li>
+      <li onclick="myFunctionProducts();">Products & Platforms</li>
+      <li onclick="myFunctionDiscover();">Discover</li>
+    </ul>
+  </div>
+
+  <div class="col-9">
+	<div id="aboutus">
+    <h1>About Us</h1>
+    <p>We help clients create the future. We combine tech expertise and business intelligence to catalyze change and deliver results.Our mission is to help customers achieve their business objectives by providing innovative, best-in-class consulting, IT solutions and services and to make it a joy for all stakeholders to work with us.</p><br>
+	<p>We function as a full stakeholder to business, offering a consulting-led approach with an integrated portfolio of technology led solutions that encompass the entire Enterprise value chain. Our Customer-centric Engagement Model defines how we do engage with you, offering specialized services and solutions that meet the distinct needs of your business.</p>
+	</div>
+	
+	<div id="services">
+	<h1>Services</h1><br>
+    <p>We help design, enable, and execute business operations to generate customer value. We drive strategic vision, thrive amidst disruption and ensure power sustainable growth leveraging our industry expertise and contextual knowledge of your business.</p>
+	</div>
+	
+	<div id="products">
+	<h1>Products & Platforms</h1><br>
+    <p>We turn raw data into meaningful, actionable insights with the help of our CIP which combines an enterprise grade Hadoop data lake with machine learning libraries, real-time processing of streaming data, a predictive scoring engine, workflow management, data visualization, and enterprise-grade security.</p>
+	<p>Organizations in the Enterprise 4.0 world are characterized by those who provide rich business experience, connect employees, partners, and assets, with flexibility to scale, and change rapidly while being future ready with technologies such as IoT, machine learning, and blockchain.</p><br>
+
+	<p>ERP on Cloud, TCS’ Enterprise 4.0 solution, offers hosted ERP applications and services for such global businesses. We deliver business-enabling solutions that are quick to deploy across core enterprise processes such as finance and accounting, procurement, supply chain, sales, and distribution.</p>	
+	</div>
+	
+	<div id="discover">
+	<h1>Discover</h1><br>
+    <p>We ensure the highest levels of certainty and satisfaction through a deep-set commitment to our clients, comprehensive industry expertise and a global network of innovation and delivery centers</p>
+	</div>
+  </div>
+</div>
+<script>
+function myFunctiondefault() {
+  var x = document.getElementById("aboutus");
+  var y = document.getElementById("services");
+  var z = document.getElementById("products");
+  var a = document.getElementById("discover");
+  x.style.display = "block";
+  y.style.display = "none"; 
+  z.style.display = "none";
+  a.style.display = "none";
+}
+
+function myFunctionServices() {
+  var x = document.getElementById("aboutus");
+  var y = document.getElementById("services");
+  var z = document.getElementById("products");
+  var a = document.getElementById("discover");
+  x.style.display = "none";
+  y.style.display = "block"; 
+  z.style.display = "none";
+  a.style.display = "none";
+}
+
+function myFunctionProducts() {
+  var x = document.getElementById("aboutus");
+  var y = document.getElementById("services");
+  var z = document.getElementById("products");
+  var a = document.getElementById("discover");
+  x.style.display = "none";
+  y.style.display = "none"; 
+  z.style.display = "block";
+  a.style.display = "none";
+}
+
+function myFunctionDiscover() {
+  var x = document.getElementById("aboutus");
+  var y = document.getElementById("services");
+  var z = document.getElementById("products");
+  var a = document.getElementById("discover");
+  x.style.display = "none";
+  y.style.display = "none"; 
+  z.style.display = "none";
+  a.style.display = "block";
+}
+</script>
+ </body>
+</html>
